@@ -91,3 +91,113 @@ body {
 .button_estilo:active, .button_active:active {
   transform: translateY(-1px);
 }
+
+/* estilizacion en la seccion sobre nosotros */
+
+.seccion_perfil{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seccion_perfil p{
+  margin: 20px;
+  font-weight: 400;
+}
+.seccion_perfil h2{
+  font-size: 20px;
+  font-weight: 500;
+}
+.seccion_perfil h3{
+  font-size: 25px;
+  font-weight: 600;
+}
+.img_perfil{
+  margin-top: 15px;
+  width: 300px;
+}
+
+/* estilizacion de div_cards caracteristicas */
+
+.section_caracteristicas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section_caracteristicas h2{
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.section_caracteristicas h3{
+  font-size: 28px;
+  font-weight: 600;
+}
+.section_caracteristicas p{
+  margin: 20px;
+  font-weight: 400;
+}
+
+.div_card {
+  width: 300px;
+  height: 264px;
+  border-radius: 20px;
+  background: #3f271e;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #000;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  
+ }
+ 
+ .div_card-details {
+  color: #FFF;
+  height: 100%;
+  gap: .5em;
+  display: grid;
+  place-content: center;
+ }
+ 
+ .div_card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #23c483;
+  color: #fff;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+ }
+ 
+ .text_color {
+  color: #FFF
+ }
+ 
+ .text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+ }
+
+ .div_card:hover {
+  border-color: #23c483;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+ }
+ 
+ .div_card:hover .div_card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+ }
+
+.div_caracteristicas{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
