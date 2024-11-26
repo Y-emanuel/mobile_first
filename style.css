@@ -5,6 +5,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-style: normal;
+  margin: 0;
+  padding: 0;
 }
 
 /* Estilizacion de barra de navegacion*/
@@ -47,25 +49,25 @@ body {
 .div_container p {
   color: #ffffffb0;
 }
-.button_active{
-    padding: 1.5em 1.2em;
-    font-size:11px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 500;
-    color: #000;
-    background-color: #ffff;
-    border: none;
-    border-radius: 45px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
+.button_active {
+  padding: 1.5em 1.2em;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #000;
+  background-color: #ffff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
 }
 
 .button_estilo {
   padding: 1.5em 1.2em;
-  font-size:11px;
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
@@ -79,62 +81,64 @@ body {
   outline: none;
 }
 
-
-
-.button_estilo:hover, .button_active:hover {
+.button_estilo:hover,
+.button_active:hover {
   background-color: #23c483;
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
   transform: translateY(-7px);
 }
 
-.button_estilo:active, .button_active:active {
+.button_estilo:active,
+.button_active:active {
   transform: translateY(-1px);
 }
 
 /* estilizacion en la seccion sobre nosotros */
 
-.seccion_perfil{
+.seccion_perfil {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.seccion_perfil p{
+.seccion_perfil p {
   margin: 20px;
   font-weight: 400;
 }
-.seccion_perfil h2{
+.seccion_perfil h2 {
   font-size: 20px;
   font-weight: 500;
 }
-.seccion_perfil h3{
+.seccion_perfil h3 {
   font-size: 25px;
   font-weight: 600;
 }
-.img_perfil{
+.img_perfil {
   margin-top: 15px;
   width: 300px;
 }
 
+
+
 /* estilizacion de div_cards caracteristicas */
 
-.section_caracteristicas{
+.section_caracteristicas {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.section_caracteristicas h2{
+.section_caracteristicas h2 {
   font-weight: 500;
   font-size: 20px;
   margin-top: 20px;
 }
-.section_caracteristicas h3{
+.section_caracteristicas h3 {
   font-size: 28px;
   font-weight: 600;
 }
-.section_caracteristicas p{
+.section_caracteristicas p {
   margin: 20px;
   font-weight: 400;
 }
@@ -149,18 +153,17 @@ body {
   border: 2px solid #000;
   transition: 0.5s ease-out;
   overflow: visible;
-  
- }
- 
- .div_card-details {
-  color: #FFF;
+}
+
+.div_card-details {
+  color: #fff;
   height: 100%;
-  gap: .5em;
+  gap: 0.5em;
   display: grid;
   place-content: center;
- }
- 
- .div_card-button {
+}
+
+.div_card-button {
   transform: translate(-50%, 125%);
   width: 60%;
   border-radius: 1rem;
@@ -168,34 +171,34 @@ body {
   background-color: #23c483;
   color: #fff;
   font-size: 1rem;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   position: absolute;
   left: 50%;
   bottom: 0;
   opacity: 0;
   transition: 0.3s ease-out;
- }
- 
- .text_color {
-  color: #FFF
- }
- 
- .text-title {
+}
+
+.text_color {
+  color: #fff;
+}
+
+.text-title {
   font-size: 1.5em;
   font-weight: bold;
- }
+}
 
- .div_card:hover {
+.div_card:hover {
   border-color: #23c483;
   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
- }
- 
- .div_card:hover .div_card-button {
+}
+
+.div_card:hover .div_card-button {
   transform: translate(-50%, 50%);
   opacity: 1;
- }
+}
 
-.div_caracteristicas{
+.div_caracteristicas {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -203,7 +206,6 @@ body {
 }
 
 /* estilizacion formulario */
-
 
 .formulario {
   display: flex;
@@ -302,7 +304,7 @@ body {
   border-radius: 10px;
   color: #fff;
   font-size: 16px;
-  transform: .3s ease;
+  transform: 0.3s ease;
 }
 
 .formulario__boton:hover {
@@ -322,7 +324,7 @@ body {
   }
 }
 
-.section_form{
+.section_form {
   display: flex;
   justify-content: center;
   margin-top: 30px;
@@ -330,14 +332,14 @@ body {
 
 /* estilizacion menu */
 
-
-.div_img{
+.div_img {
   width: 300px;
   border: #000 solid 3px;
   border-radius: 20px;
+  margin: 0 20px 0 20px;
 }
 
-.div_container-menu{
+.div_container-menu {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -349,6 +351,104 @@ body {
   box-shadow: #000 5px 0 50px 3px;
 }
 
-.div_container-medio{
+.div_container-medio {
   text-align: center;
+}
+
+.section_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* estilizacion de la seccion calidad */
+
+.section_img-calidad {
+  width: 100%;
+}
+.section_calidad {
+  display: flex;
+  background-color: #3f271e;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+}
+
+.porcentaje_80 {
+  background-color: #fff;
+  height: 10px;
+  width: 150px;
+}
+
+.porcentaje_90 {
+  background-color: #fff;
+  height: 10px;
+  width: 250px;
+}
+.porcentaje_70 {
+  background-color: #fff;
+  height: 10px;
+  width: 100px;
+}
+
+.div_porcentajes {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  align-items: center;
+}
+
+/* estilizacion de suscripcion */
+
+.section_email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section_email div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input_email {
+  width: 300px;
+  height: 40px;
+  box-shadow: #000 5px 0 140px 0;
+  outline: none;
+  border: none;
+}
+
+/* estilizacion del footer */
+
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+.footer_fin {
+  background-color: #3f271e;
+  color: #fff;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer_fin ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  gap: 20px;
+}
+.footer_fin ul li a {
+  color: #fff;
+}
+
+/* extra para la paginas */
+.img_perfil-page, .section_menu-page, .section_form-page, .section_calidad-page {
+  margin-top: 80px;
 }
