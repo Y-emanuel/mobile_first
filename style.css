@@ -39,6 +39,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   padding: 10px;
 }
 
@@ -48,6 +49,7 @@ body {
 
 .div_container p {
   color: #ffffffb0;
+  font-weight: 500;
 }
 .button_active {
   padding: 1.5em 1.2em;
@@ -100,6 +102,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .seccion_perfil p {
@@ -118,8 +121,6 @@ body {
   margin-top: 15px;
   width: 300px;
 }
-
-
 
 /* estilizacion de div_cards caracteristicas */
 
@@ -449,6 +450,86 @@ li {
 }
 
 /* extra para la paginas */
-.img_perfil-page, .section_menu-page, .section_form-page, .section_calidad-page {
+.img_perfil-page,
+.section_menu-page,
+.section_form-page,
+.section_calidad-page {
   margin-top: 80px;
+}
+
+/* adaptando pagina para tablet */
+
+@media (min-width: 426px) and (max-width: 768px) {
+  /* estilizacion del encabezado */
+  .div_container p {
+    width: 500px;
+  }
+
+  /* estilizacion en la seccion sobre nosotros */
+
+  .seccion_perfil {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .div_caja-firma{
+    display: flex;
+    align-items: flex-end;
+    justify-content:space-evenly;
+  }
+  .div_bloque-firma{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  }
+  .div_bloque-firma img, .div_bloque-firma span{
+    width: 110px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .seccion_perfil p {
+    margin: 20px;
+    font-weight: 400;
+    width: 500px;
+  }
+  .img_perfil {
+    margin-top: 15px;
+    width: 200px;
+  }
+/* estilizacion formulario */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 100%;
+  background-color: #3f271e;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+/* estilizacion menu */
+.div_bloque-menu{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+/* estilizacion de la seccion calidad */
+
+.section_img-calidad {
+  width: 350px;
+  object-fit: cover;
+}
+.section_calidad {
+  display: flex;
+  background-color: #3f271e;
+  flex-direction: row;
+  color: #fff;
+  text-align: center;
+  margin: 20px;
+}
+
 }
