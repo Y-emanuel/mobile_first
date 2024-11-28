@@ -59,8 +59,10 @@
   <section class="seccion_perfil">
     <img src="img/about_img_02.png" alt="foto de perfil" class="img_perfil">
     <div>
-      <h2>Sobre nosotros</h2>
-      <h3>Te gustaría un delicioso café?</h3>
+      <div>
+        <h2>Sobre nosotros</h2>
+        <h3>Te gustaría un delicioso café?</h3>
+      </div>
       <p>Urna Morbi Tortor, nadie puede colocar ni inclinarse, ni necesita pájaro. Fue una gran puerta a la enfermedad,
         que tenía una sonrisa en el rostro. Estamos vivos y embarazadas, quién puede poner el gatillo. En la comodidad
         de
@@ -80,10 +82,9 @@
         </div>
       </div>
     </div>
-
+  </section>
     <!-- caracteristicas -->
 
-  </section>
   <section class="section_caracteristicas">
     <h2>Nuestras características</h2>
     <h3>Lo que te ofrecemos</h3>
@@ -129,16 +130,17 @@
   </section>
   <!-- formulario -->
   <section class="section_form">
+    <div class="section_form-caja"> 
     <form class="formulario">
       <p class="formulario__titulo">¡Reserva tu mesa ahora!</p>
       <div class="formulario__grupo">
         <label class="formulario__campo">
-          <input class="formulario__entrada" type="text" placeholder="" required="">
+          <input class="formulario__entrada formulario__entrada-active" type="text" placeholder="" required="">
           <span class="formulario__etiqueta">Nombre</span>
         </label>
 
         <label class="formulario__campo">
-          <input class="formulario__entrada" type="text" placeholder="" required="">
+          <input class="formulario__entrada formulario__entrada-active" type="text" placeholder="" required="">
           <span class="formulario__etiqueta">Apellido</span>
         </label>
       </div>
@@ -158,15 +160,16 @@
       </label>
       <button class="formulario__boton">Enviar</button>
     </form>
+  </div>
   </section>
   <!-- menu -->
   <section class="section_menu">
     <h2>Nuestro Menú</h2>
     <h3>Lo que tenemos aquí</h3>
-    <p>Por tanto, no se perseguirá el dolor de la vida. Los niños no necesitan preocuparse por el dolor, pero sí a veces
+    <p class="section_menu-p">Por tanto, no se perseguirá el dolor de la vida. Los niños no necesitan preocuparse por el dolor, pero sí a veces
       por el miedo. Mañana el dolor del dolor pulvinar, que sea el dolor del objetivo</p>
     <div class="div_bloque-menu">
-      <div>
+      <div class="div_bloque-menu-second">
         <div class="div_container-menu">
           <img src="img/img1.jpg" alt="" class="div_img">
           <div class=" div_container-medio">
@@ -216,7 +219,7 @@
           <p class="div_p-precio">$13.00</p>
         </div>
       </div>
-      <div>
+      <div class="div_bloque-menu-second">
         <div class="div_container-menu">
           <img src="img/img2.jpg" alt="" class="div_img">
           <div class=" div_container-medio">
@@ -273,7 +276,7 @@
     <img src="img/skills-img.png" alt="" class="section_img-calidad">
     <div>
       <h3>Ofrecemos una amplia selección de café.</h3>
-      <p>No te disfraces ahora. Mecenas teme el precio objetivo. Algunos de los castigos corporales del lago, y se lleva
+      <p class="section_calidad-p">No te disfraces ahora. Mecenas teme el precio objetivo. Algunos de los castigos corporales del lago, y se lleva
         el resultado mismo de la aerolínea.</p>
       <div>
         <div class="div_porcentajes">
@@ -295,7 +298,7 @@
     </div>
 
   </section>
-
+<!-- email -->
   <section class="section_email">
     <h3>Obtenga las mejores ofertas en café</h3>
     <p>Con la suscripción, disfruta de tus cafés favoritos sin tener que pensar en ello</p>
@@ -304,8 +307,8 @@
       <input type="submit" value="SUSCRIBITE AHORA" class="button_estilo">
     </div>
   </section>
-
-  <footer class="footer_fin">
+<!-- footer -->
+  <footer class="footer_fin fin">
     <ul>
       <li><a href="#">Inicio</a></li>
       <li><a href="pages/acerca-de.html">Acerca de</a></li>

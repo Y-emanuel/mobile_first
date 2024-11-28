@@ -103,6 +103,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-top: 75px;
 }
 
 .seccion_perfil p {
@@ -350,6 +351,7 @@ body {
   margin: 20px 20px 0 20px;
   border-radius: 20px;
   box-shadow: #000 5px 0 50px 3px;
+  
 }
 
 .div_container-medio {
@@ -362,6 +364,7 @@ body {
   align-items: center;
   text-align: center;
   margin-bottom: 30px;
+  margin-top: 90px;
 }
 
 /* estilizacion de la seccion calidad */
@@ -408,6 +411,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin: 50px 0 50px 0;
 }
 
 .section_email div {
@@ -457,9 +461,11 @@ li {
   margin-top: 80px;
 }
 
+
+
 /* adaptando pagina para tablet */
 
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 1024px) {
   /* estilizacion del encabezado */
   .div_container p {
     width: 500px;
@@ -473,6 +479,7 @@ li {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+ 
   }
   .div_caja-firma{
     display: flex;
@@ -498,6 +505,8 @@ li {
     margin-top: 15px;
     width: 200px;
   }
+
+  
 /* estilizacion formulario */
 .formulario {
   display: flex;
@@ -529,7 +538,118 @@ li {
   flex-direction: row;
   color: #fff;
   text-align: center;
-  margin: 20px;
+  margin: 90px 20px 20px 20px;
 }
 
+}
+
+@media (min-width: 1025px){
+  /* estilizacion del encabezado */
+  .div_container p {
+    width: 500px;
+  }
+
+  /* estilizacion en la seccion sobre nosotros */
+
+  .seccion_perfil {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+ 
+  }
+  .div_caja-firma{
+    display: flex;
+    align-items: flex-end;
+    justify-content:space-evenly;
+  }
+  .div_bloque-firma{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  }
+  .div_bloque-firma img, .div_bloque-firma span{
+    width: 110px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .seccion_perfil p {
+    margin: 20px;
+    font-weight: 400;
+    width: 500px;
+  }
+  .img_perfil {
+    margin-top: 15px;
+    width: 300px;
+  }
+
+  /* estilizacion formulario */
+  .section_form {
+    display: flex;
+    justify-content: center;
+    margin: 70px;
+  }
+  
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 100%;
+  background-color: #3f271e;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+.section_form-caja{
+  width: 70%;
+}
+.formulario__grupo {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+  justify-content: center;
+}
+.formulario__entrada-active{
+  width: 30vw;
+}
+
+/* estilizacion menu */
+
+.div_bloque-menu{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.div_bloque-menu-second{
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: center;
+}
+
+.section_menu-p{
+  width: 70%;
+}
+
+/* estilizacion de la seccion calidad */
+
+.section_img-calidad {
+  width: 850px;
+  object-fit: cover;
+}
+.section_calidad {
+  display: flex;
+  align-items: center;
+  background-color: #3f271e;
+  flex-direction: row;
+  color: #fff;
+  text-align: center;
+  margin: 90px 20px 20px 20px;
+  justify-content:space-evenly;
+}
+.section_calidad-p{
+  width: 600px;
+}
 }
