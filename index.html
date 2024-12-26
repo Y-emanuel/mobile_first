@@ -2,13 +2,19 @@
 <html lang="es">
 
 <head>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bruin</title>
+  <title>Bruin - Tu Tienda de Confianza</title>
+  <meta name="description"
+    content="Descubre Bruin, la tienda donde encontrarás los mejores productos en cafe y más. Calidad garantizada." />
+  <meta name="author" content="Equipo Bruin" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/icons8-cafe-96.png" type="image/x-icon" />
 </head>
+
 
 <body>
 
@@ -83,7 +89,7 @@
       </div>
     </div>
   </section>
-    <!-- caracteristicas -->
+  <!-- caracteristicas -->
 
   <section class="section_caracteristicas">
     <h2>Nuestras características</h2>
@@ -130,43 +136,44 @@
   </section>
   <!-- formulario -->
   <section class="section_form">
-    <div class="section_form-caja"> 
-    <form class="formulario">
-      <p class="formulario__titulo">¡Reserva tu mesa ahora!</p>
-      <div class="formulario__grupo">
+    <div class="section_form-caja">
+      <form class="formulario">
+        <p class="formulario__titulo">¡Reserva tu mesa ahora!</p>
+        <div class="formulario__grupo">
+          <label class="formulario__campo">
+            <input class="formulario__entrada formulario__entrada-active" type="text" placeholder="" required="">
+            <span class="formulario__etiqueta">Nombre</span>
+          </label>
+
+          <label class="formulario__campo">
+            <input class="formulario__entrada formulario__entrada-active" type="text" placeholder="" required="">
+            <span class="formulario__etiqueta">Apellido</span>
+          </label>
+        </div>
+
         <label class="formulario__campo">
-          <input class="formulario__entrada formulario__entrada-active" type="text" placeholder="" required="">
-          <span class="formulario__etiqueta">Nombre</span>
+          <input class="formulario__entrada" type="email" placeholder="" required="">
+          <span class="formulario__etiqueta">Correo electrónico</span>
         </label>
 
         <label class="formulario__campo">
-          <input class="formulario__entrada formulario__entrada-active" type="text" placeholder="" required="">
-          <span class="formulario__etiqueta">Apellido</span>
+          <input class="formulario__entrada" type="date" placeholder="" required="">
+          <span class="formulario__etiqueta"></span>
         </label>
-      </div>
-
-      <label class="formulario__campo">
-        <input class="formulario__entrada" type="email" placeholder="" required="">
-        <span class="formulario__etiqueta">Correo electrónico</span>
-      </label>
-
-      <label class="formulario__campo">
-        <input class="formulario__entrada" type="date" placeholder="" required="">
-        <span class="formulario__etiqueta"></span>
-      </label>
-      <label class="formulario__campo">
-        <input class="formulario__entrada" type="time" placeholder="" required="">
-        <span class="formulario__etiqueta"></span>
-      </label>
-      <button class="formulario__boton">Enviar</button>
-    </form>
-  </div>
+        <label class="formulario__campo">
+          <input class="formulario__entrada" type="time" placeholder="" required="">
+          <span class="formulario__etiqueta"></span>
+        </label>
+        <button class="formulario__boton">Enviar</button>
+      </form>
+    </div>
   </section>
   <!-- menu -->
   <section class="section_menu">
     <h2>Nuestro Menú</h2>
     <h3>Lo que tenemos aquí</h3>
-    <p class="section_menu-p">Por tanto, no se perseguirá el dolor de la vida. Los niños no necesitan preocuparse por el dolor, pero sí a veces
+    <p class="section_menu-p">Por tanto, no se perseguirá el dolor de la vida. Los niños no necesitan preocuparse por el
+      dolor, pero sí a veces
       por el miedo. Mañana el dolor del dolor pulvinar, que sea el dolor del objetivo</p>
     <div class="div_bloque-menu">
       <div class="div_bloque-menu-second">
@@ -276,7 +283,8 @@
     <img src="img/skills-img.png" alt="" class="section_img-calidad">
     <div>
       <h3>Ofrecemos una amplia selección de café.</h3>
-      <p class="section_calidad-p">No te disfraces ahora. Mecenas teme el precio objetivo. Algunos de los castigos corporales del lago, y se lleva
+      <p class="section_calidad-p">No te disfraces ahora. Mecenas teme el precio objetivo. Algunos de los castigos
+        corporales del lago, y se lleva
         el resultado mismo de la aerolínea.</p>
       <div>
         <div class="div_porcentajes">
@@ -298,7 +306,7 @@
     </div>
 
   </section>
-<!-- email -->
+  <!-- email -->
   <section class="section_email">
     <h3>Obtenga las mejores ofertas en café</h3>
     <p>Con la suscripción, disfruta de tus cafés favoritos sin tener que pensar en ello</p>
@@ -307,7 +315,7 @@
       <input type="submit" value="SUSCRIBITE AHORA" class="button_estilo">
     </div>
   </section>
-<!-- footer -->
+  <!-- footer -->
   <footer class="footer_fin fin">
     <ul>
       <li><a href="#">Inicio</a></li>
